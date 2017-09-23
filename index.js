@@ -13,3 +13,13 @@ function nowServing(katzDeli) {
 		return `Currently serving ${current}.`;
 	}
 }
+
+function currentLine(katzDeli) {
+	var line = "The line is currently: ";
+	for (var i = 0; i < katzDeli.length; i++) {
+		line += `${i + 1}. ${katzDeli[i]}`;
+		if (i < katzDeli.length - 1) {
+			line += `, `;
+		}
+	}
+}
