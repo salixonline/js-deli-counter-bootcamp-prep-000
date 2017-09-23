@@ -25,4 +25,5 @@ function currentLine(katzDeli) {
 			line += `, `;
 		}
 	}
+  return line;
 }
